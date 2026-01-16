@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ad89136-8f32-4f43-b8e5-7fe6dcdef2c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Elowen/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/BACKEND_INTEGRATION.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/NAVIGATION_FLOW.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/__tests__/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/android/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/android/src/screens/LoginScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/consultant/ConsultantJobsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/consultant/ConsultantJobsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/consultant/ConsultantLoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/consultant/ConsultantLoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/consultant/ConsultantSignUpScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/consultant/ConsultantSignUpScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/JobSeekerScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/JobSeekerScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/JobsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/JobsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/LoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/OTPScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/OTPScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/SignUpScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/screens/job-seeker/SignUpScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elowen/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Elowen/src/services/api.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Elowen" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="376pWC8lrOYFoZzzbMPt24NGbmL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Elowen pro&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;device.mirroring&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ad89136-8f32-4f43-b8e5-7fe6dcdef2c0" name="Changes" comment="" />
+      <created>1766233405637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766233405637</updated>
+    </task>
+    <servers />
+  </component>
+</project>

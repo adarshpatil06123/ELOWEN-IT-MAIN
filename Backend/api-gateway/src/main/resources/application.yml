@@ -1,0 +1,102 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+              - OPTIONS
+            allowedHeaders: "*"
+            exposedHeaders:
+              - Authorization
+              - X-Request-Id
+            allowCredentials: false
+            maxAge: 3600
+      
+      # Default filters for all routes
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      
+      # Circuit breaker configuration
+      httpclient:
+        connect-timeout: 5000
+        response-timeout: 30s
+
+  # Redis configuration for rate limiting
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 2000ms
+
+# Service URLs
+services:
+  auth:
+    url: ${AUTH_SERVICE_URL:http://localhost:8082}
+  user:
+    url: ${USER_SERVICE_URL:http://localhost:8085}
+  job:
+    url: ${JOB_SERVICE_URL:http://localhost:8083}
+  application:
+    url: ${APPLICATION_SERVICE_URL:http://localhost:8084}
+  search:
+    url: ${SEARCH_SERVICE_URL:http://localhost:8085}
+
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET:elowenMarketplaceSecretKeyForJWTTokenGeneration2026MustBeLongEnoughForHS512}
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    health:
+      show-details: always
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.elowen.jobportal.gateway: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+---
+# Docker profile
+spring:
+  config:
+    activate:
+      on-profile: docker
+  
+  data:
+    redis:
+      host: redis
+      port: 6379
+
+services:
+  auth:
+    url: http://auth-service:8081
+  user:
+    url: http://user-service:8082
+  job:
+    url: http://job-service:8083
+  application:
+    url: http://application-service:8084
+  search:
+    url: http://search-service:8085

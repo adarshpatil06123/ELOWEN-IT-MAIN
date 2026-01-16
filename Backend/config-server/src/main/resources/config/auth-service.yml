@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/elowen_auth_db?createDatabaseIfNotExist=true
+    username: root
+    password: 
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: elowenMarketplaceSecretKeyForJWTTokenGeneration2026MustBeLongEnoughForHS512
+  expiration: 86400000
