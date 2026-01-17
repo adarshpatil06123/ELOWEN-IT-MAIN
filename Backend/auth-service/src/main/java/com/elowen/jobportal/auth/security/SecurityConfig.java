@@ -17,13 +17,13 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
-                    "/auth/register",
-                    "/auth/login",
-                    "/auth/request-otp",
-                    "/auth/verify-otp",
-                    "/auth/resend-otp",
-                    "/auth/forgot-password",
-                    "/auth/reset-password",
+                    "/api/auth/register",
+                    "/api/auth/login",
+                    "/api/auth/request-otp",
+                    "/api/auth/verify-otp",
+                    "/api/auth/resend-otp",
+                    "/api/auth/forgot-password",
+                    "/api/auth/reset-password",
                     "/auth/health",
                     "/actuator/**"
                 ).permitAll()
